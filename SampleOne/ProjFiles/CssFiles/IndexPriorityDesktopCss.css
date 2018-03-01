@@ -1,0 +1,56 @@
+/* Always Design for Mobile First
+Mobile First means designing for mobile before designing for desktop 
+or any other device 
+(This will make the page display faster on smaller devices).
+
+This means that we must make some changes in our CSS.
+
+Instead of changing styles when the width gets smaller than 768px, 
+we should change the design when the width gets larger than 768px. 
+This will make our design Mobile First: */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Here is the way to declare responsive widths of UI page */
+
+/* The columns inside a row are all floating to the left, 
+and are therefore taken out of the flow of the page, 
+and other elements will be placed as if the columns do not exist. 
+To prevent this, we will add a style that clears the flow: */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* All these columns should be floating to the left, and have a padding of 15px: */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+/* delaring 12 columns with different percentages of widths */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
