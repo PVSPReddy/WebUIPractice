@@ -20,6 +20,48 @@
     width: 100%;
 }
 */
+/* 
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
+
+/*
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.row {
+	clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clear {
+    zoom:1;
+}
+
+.column {
+	display: inline-block;
+    }
+*/
+
 html, body, .mainCenterAttr
 {
     width: 100%;
@@ -46,35 +88,34 @@ html, body, .mainCenterAttr
 }
 
 @media only screen and (min-width: 481px) {
-    /* For mobiles: */
+    /* For Desktops and Tablets: */
     .imageLogoDiv
-{
-    width: 70%;
-    height: 100%;
-    float: left;
-    /* display: inline-grid;
-    align-items: center; */
-    margin: 0px;
-    padding: 0px;
-}
-.imageLogo
-{
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-    /* float: left;
-    margin: 0px;
-    padding: 0px;*/
-}
-.dataBody
-{
-    width: 30%;
-    height: 100%;
-    float: left;
-    margin-top: 10%;
-    padding: 0px;
-    box-sizing: border-box;
-}
+    {
+        width: 70%;
+        height: 100%;
+        float: left;
+        /* display: inline-grid;
+        align-items: center; */
+        margin: 0px;
+        padding: 0px;
+    }
+    .imageLogo
+    {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        /* float: left;
+        margin: 0px;
+        padding: 0px;*/
+    }
+    .dataBody
+    {
+        width: 30%;
+        height: 90%;
+        float: left;
+        margin-top: 10%;
+        padding-top: 0%;
+    }
 }
 @media only screen and (max-width: 480px) {
     /* For mobiles: */
@@ -100,11 +141,10 @@ html, body, .mainCenterAttr
     .dataBody
     {
         width: 100%;
-        height: 100%;
+        height: 50%;
         float: left;
-        margin-top: 10%;
-        padding: 0px;
-        box-sizing: border-box;
+        margin-top: 0%;
+        padding-top: 5vh;
     }
 }
     
