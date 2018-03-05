@@ -102,7 +102,9 @@ html, body, .mainCenterAttr
 .entries
 {
     width: 100%;
-    height: 15px;
+    height: 30px;
+    border: none;
+    border-width: 0px;
 }
 .submitButton
 {
@@ -112,7 +114,7 @@ html, body, .mainCenterAttr
 .inputDiv
 {
     width: 100%;
-    height: 35px;
+    height: 60px;
     /* display: inline-block; */
     /* clear: both; */
     background-color: green;
@@ -146,7 +148,7 @@ html, body, .mainCenterAttr
     /* box-sizing: border-box; */
     content: "";
     clear: both;
-    display: table;
+    /* display: table; */
 }
 
 @media only screen and (min-width: 481px) {
@@ -172,11 +174,14 @@ html, body, .mainCenterAttr
     }
     .dataBody
     {
-        width: 30%;
+        width: 25%;
         height: 90%;
+        min-width: 320px;
         float: left;
         margin-top: 10vh;
         padding-top: 0%;
+        padding-right: 2.5%;
+        padding-left: 2.5%;
     }
 }
 @media only screen and (max-width: 480px) {
@@ -202,10 +207,12 @@ html, body, .mainCenterAttr
     }
     .dataBody
     {
-        width: 100%;
+        width: 95%;
         height: 50%;
         float: left;
         margin-top: 0%;
         padding-top: 5vh;
+        padding-right: 2.5%;
+        padding-left: 2.5%;
     }
 }
