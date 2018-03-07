@@ -1,3 +1,10 @@
+function PageStartUp()
+{
+    var alterPage = document.getElementById('frameAlterLogPages');
+    alterPage.src = "ProjFiles/HtmlFiles/SignIn.html";
+}
+
+/*
 function listMenuScrollItems()
 {
     var parent = document.getElementById("listTopicsMenu");
@@ -9,6 +16,7 @@ function listMenuScrollItems()
         "</div>";
     }
 }
+*/
 
 /* original post
 // (function() {
