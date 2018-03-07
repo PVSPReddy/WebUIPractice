@@ -103,11 +103,27 @@ html, body, .mainCenterAttr
 {
     width: 99%;
     height: 30px;
+    outline: none;/*to remove glowing border on focus/click*/
     /* border: none; */
     border-width: 0px;
     border-bottom-width: 1px;
     border-bottom-color: maroon;
 }
+
+/*
+.entries:focus
+{
+    box-shadow: transparent;
+    /* box-sizing: none; *
+    width: 99%;
+    height: 30px;
+    /* border: none; *
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-bottom-color: maroon;
+}
+*/
+
 .submitButton
 {
     width: 100%;
@@ -122,6 +138,7 @@ html, body, .mainCenterAttr
     border-width: 1px;
     border-color: green;
     border-radius: 5px;
+    outline: none;/*to remove glowing border on focus/click*/
     /* height: 15px; */
 }
 .inputButtonDiv
