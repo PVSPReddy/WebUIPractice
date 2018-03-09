@@ -1,7 +1,7 @@
 function PageStartUp()
 {
-    // var alterPage = document.getElementById('frameAlterLogPages');
-    // alterPage.src = "ProjFiles/HtmlFiles/SignIn.html";
+    var alterPage = document.getElementById('frameAlterLogPages');
+    alterPage.src = "ProjFiles/HtmlFiles/SignIn.html";
 }
 
 /*

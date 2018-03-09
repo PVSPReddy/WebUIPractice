@@ -162,8 +162,8 @@ html, body, .mainCenterAttr
         float: left;
         margin-top: 10vh;
         padding-top: 0%;
-        padding-right: 12px;/* 2.5%; */
-        padding-left: 12px;/*  2.5%; */
+        /* padding-right: 12px;2.5%; */
+        /* padding-left: 12px; 2.5%; */
         /* display: flex;
         justify-content: space-between; */
     }
@@ -252,8 +252,8 @@ html, body, .mainCenterAttr
     {
         /* width: 100%;
         height: 100%; */
-        width: 100%;/*vw=ViewportWidth, vh=ViewportHeight*/
-        height: 100%;/*vw=ViewportWidth, vh=ViewportHeight*/
+        width: 40vh;/*vw=ViewportWidth, vh=ViewportHeight*/
+        height: 40vh;/*vw=ViewportWidth, vh=ViewportHeight*/
         vertical-align: middle;
         /* float: left; */
     }
