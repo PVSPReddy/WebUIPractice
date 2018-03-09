@@ -162,8 +162,8 @@ html, body, .mainCenterAttr
         float: left;
         margin-top: 10vh;
         padding-top: 0%;
-        padding-right: 12px;/* 2.5%; */
-        padding-left: 12px;/*  2.5%; */
+        padding-right: 12px;/*2.5%;*/
+        padding-left: 12px; /*2.5%;*/
         /* display: flex;
         justify-content: space-between; */
     }
@@ -260,12 +260,13 @@ html, body, .mainCenterAttr
     
     .imageLogoDiv
     {
-        width: 100%;
+        width: 50%;
         height: 40%;
-        float: left;
+        /* float: left; */
+        align-items: center;
         /* display: inline-grid;
         align-items: center; */
-        margin: 0px;
+        /* /* margin: 0px; */
         padding-top: 5vh;
     }
     /*
