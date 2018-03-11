@@ -129,6 +129,19 @@ html, body, .mainCenterAttr
     line-height: 2px; */
 }
 
+.signInFormCSS
+{
+    width: 100%;
+    height: 100%;
+    /* visibility: hidden; */
+}
+
+.signUpFormCSS
+{
+    width: 100%;
+    height: 100%;
+}
+
 @media only screen and (min-width: 481px) {
     /* For Desktops and Tablets: */
     .imageBackground

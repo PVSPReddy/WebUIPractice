@@ -4,6 +4,22 @@ function PageStartUp()
     // alterPage.src = "ProjFiles/HtmlFiles/SignIn.html";
 }
 
+function OnSignInClicked()
+{
+    var signUpPage = document.getElementById('signUpFormData');
+    signUpPage.style.visibility = "hidden";  
+    var signInPage = document.getElementById('signInFormData');
+    signInPage.style.visibility = "visible";
+}
+
+function OnSignUpClicked()
+{  
+    var signInPage = document.getElementById('signInFormData');
+    signInPage.style.visibility = "hidden";
+    var signUpPage = document.getElementById('signUpFormData');
+    signInPage.style.visibility = "visible";   
+}
+
 /*
 function listMenuScrollItems()
 {

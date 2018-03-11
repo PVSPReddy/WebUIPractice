@@ -22,8 +22,8 @@
                         <img src="ProjFiles\Images\SigninTwo.jpg" style="Height:100%; Width:100%; "></img>
                     </div>
                     <div style="float:Right; Height:100%; ">
-                        <button class="logButtons">Sign In</button>
-                        <button class="logButtons">Sign Up</button>
+                        <button class="logButtons" onclick="OnSignInClicked()">Sign In</button>
+                        <button class="logButtons" onclick="OnSignUpClicked()">Sign Up</button>
                     </div>
                 </div>
                 
@@ -42,44 +42,118 @@
                     <div class="bodyRight"> 
                         <!--<iframe style="height:100%; width:90%; padding-left:10px; padding-right:10px; " id="frameAlterLogPages" src="" >
                         </iframe>-->
-                        <center class="formData">
-                            <form >
-                                <div class="dataBody">
-                                    <div class="inputDiv">
-                                        <div class="inputLabelDiv">
-                                            <tr>
-                                                <label class="entryLabels">Name:</label>
-                                            </tr>
+                        <div class="formData">
+
+                             
+                            <div class="signInFormCSS" id="signInFormData">
+                                <form >
+                                    <div class="dataBody">
+                                        <div class="inputDiv">
+                                            <div class="inputLabelDiv">
+                                                <tr>
+                                                    <label class="entryLabels">Name:</label>
+                                                </tr>
+                                            </div>
+                                            <div class="inputTextPassDiv">
+                                                <tr>
+                                                    <input type="text" placeholder="Enter Name" name="itemId" class="entries"/>
+                                                </tr>
+                                            </div>
                                         </div>
-                                        <div class="inputTextPassDiv">
+                                        <div class="brHeight" ></div>
+                                        <div class="inputDiv">
+                                            <div class="inputLabelDiv">
+                                                <tr>
+                                                    <label class="entryLabels">Password:</label>
+                                                </tr>
+                                            </div>
+                                            <div class="inputTextPassDiv">
+                                                <tr >
+                                                    <input type="password" placeholder="Enter Password" name="passwordId" class="entries"/>
+                                                </tr>
+                                            </div>
+                                        </div>
+                                        <div class="brHeight" ></div>
+                                        <div class="brHeight" ></div>
+                                        <div class="inputButtonDiv">
                                             <tr>
-                                                <input type="text" placeholder="Enter Name" name="itemId" class="entries"/>
+                                                <input type="submit" name="submitMovie" value="Submit" class="submitButton"/>
                                             </tr>
                                         </div>
                                     </div>
-                                    <div class="brHeight" ></div>
-                                    <div class="inputDiv">
-                                        <div class="inputLabelDiv">
-                                            <tr>
-                                                <label class="entryLabels">Password:</label>
-                                            </tr>
+                                </form>
+                            </div>
+
+
+
+                            <div class="signUpFormCSS" id="signUpFormData">
+                                    <form >
+                                        <div class="dataBody">
+                                            <div class="inputDiv">
+                                                <div class="inputLabelDiv">
+                                                    <tr>
+                                                        <label class="entryLabels">Name:</label>
+                                                    </tr>
+                                                </div>
+                                                <div class="inputTextPassDiv">
+                                                    <tr>
+                                                        <input type="text" placeholder="Enter Name" name="itemId" class="entries"/>
+                                                    </tr>
+                                                </div>
+                                            </div>
+                                            <div class="brHeight" ></div>
+                                            <div class="inputDiv">
+                                                <div class="inputLabelDiv">
+                                                    <tr>
+                                                        <label class="entryLabels">Name:</label>
+                                                    </tr>
+                                                </div>
+                                                <div class="inputTextPassDiv">
+                                                    <tr>
+                                                        <input type="text" placeholder="Enter Name" name="itemId" class="entries"/>
+                                                    </tr>
+                                                </div>
+                                            </div>
+                                            <div class="brHeight" ></div>
+                                            <div class="inputDiv">
+                                                <div class="inputLabelDiv">
+                                                    <tr>
+                                                        <label class="entryLabels">Name:</label>
+                                                    </tr>
+                                                </div>
+                                                <div class="inputTextPassDiv">
+                                                    <tr>
+                                                        <input type="text" placeholder="Enter Name" name="itemId" class="entries"/>
+                                                    </tr>
+                                                </div>
+                                            </div>
+                                            <div class="brHeight" ></div>
+                                            <div class="inputDiv">
+                                                <div class="inputLabelDiv">
+                                                    <tr>
+                                                        <label class="entryLabels">Password:</label>
+                                                    </tr>
+                                                </div>
+                                                <div class="inputTextPassDiv">
+                                                    <tr >
+                                                        <input type="password" placeholder="Enter Password" name="passwordId" class="entries"/>
+                                                    </tr>
+                                                </div>
+                                            </div>
+                                            <div class="brHeight" ></div>
+                                            <div class="brHeight" ></div>
+                                            <div class="inputButtonDiv">
+                                                <tr>
+                                                    <input type="submit" name="submitMovie" value="Submit" class="submitButton"/>
+                                                </tr>
+                                            </div>
                                         </div>
-                                        <div class="inputTextPassDiv">
-                                            <tr >
-                                                <input type="password" placeholder="Enter Password" name="passwordId" class="entries"/>
-                                            </tr>
-                                        </div>
-                                    </div>
-                                    <div class="brHeight" ></div>
-                                    <div class="brHeight" ></div>
-                                    <div class="inputButtonDiv">
-                                        <tr>
-                                            <input type="submit" name="submitMovie" value="Submit" class="submitButton"/>
-                                        </tr>
-                                    </div>
+                                    </form>
                                 </div>
-                            </form>
-                        </center>
+
+
+
+                        </div>
                     </div>
                 </div>
                 
