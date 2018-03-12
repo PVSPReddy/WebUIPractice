@@ -1,23 +1,47 @@
-function PageStartUp()
+function PageStartUp(urlData)
 {
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("text/html");
+    //xobj.open('GET', './ProjFiles/HtmlFiles/SignIn.html', true); // Replace 'my_data' with the path to your file
+    xobj.open('GET', urlData, true); 
+    xobj.onreadystatechange = function () 
+    {
+      if (xobj.readyState == 4 && xobj.status == 200)
+      {
+        // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+        //callback(xobj.responseText);
+        var data = xobj.response;
+        var form = document.getElementById('formDynamicData');
+        form.innerHTML = data;
+        // var options = JSON.parse(data);
+        // var option = document.getElementById('URLOptions');
+        var optionsHTML="";
+        // for(i=0; i<options.length; i++ )
+        // {
+        //   optionsHTML = optionsHTML+"<option value="+options[i].url+">"+options[i].name+"</option>";
+        // }
+        // option.innerHTML = option.innerHTML+optionsHTML;
+      }
+    };
+    xobj.send();
+    //xobj.send(null);  
+ }
+
+
+// function PageStartUp()
+// {
     // var alterPage = document.getElementById('frameAlterLogPages');
     // alterPage.src = "ProjFiles/HtmlFiles/SignIn.html";
-}
+// }
 
 function OnSignInClicked()
 {
-    var signUpPage = document.getElementById('signUpFormData');
-    signUpPage.style.visibility = "hidden";  
-    var signInPage = document.getElementById('signInFormData');
-    signInPage.style.visibility = "visible";
+    PageStartUp('./ProjFiles/HtmlFiles/SignIn.html');
 }
 
 function OnSignUpClicked()
 {  
-    var signInPage = document.getElementById('signInFormData');
-    signInPage.style.visibility = "hidden";
-    var signUpPage = document.getElementById('signUpFormData');
-    signInPage.style.visibility = "visible";   
+    PageStartUp('./ProjFiles/HtmlFiles/SignUp.html');  
 }
 
 /*
