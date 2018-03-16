@@ -22,10 +22,9 @@ html, body, .mainCenterAttr
     /* overflow: hidden; */
 }
 
-.header
+.mainBody
 {
-    width: 100%;
-    height: 10%;
+    display: flex;
 }
 
 .logButtons
@@ -34,24 +33,6 @@ html, body, .mainCenterAttr
     background-color: indianred;
     border: none;
     outline: none;
-}
-
-
-.entryLabels
-{
-    width: 50%;
-    height: 15px;
-    min-height: 5px;
-    float: left;
-    text-align: start;
-}
-.inputLabelDiv
-{
-    width: 100%;
-    height: 15px;
-    /* display: inline-block; */
-    /* clear: both; */
-    /* background-color: green; */
 }
 
 .entries
@@ -65,14 +46,6 @@ html, body, .mainCenterAttr
     border-width: 0px;
     border-bottom-width: 1px;
     border-bottom-color: maroon;
-}
-.inputTextPassDiv
-{
-    width: 100%;
-    height: 15px;
-    /* display: inline-block; */
-    /* clear: both; */
-    /* background-color: green; */
 }
 
 .submitButton
@@ -104,23 +77,6 @@ html, body, .mainCenterAttr
     padding: 0%;
 }
 
-.inputDiv
-{
-    width: 100%;
-    height: 60px;
-    /* display: inline-block; */
-    /* clear: both; */
-    /*border: magenta; */
-    padding-top: 6px;
-    padding-bottom: 6px;
-    border-color: gray;
-    border-style: solid;/*very important line to show border colors else borders wont be visible*/
-    border-width: 1px;
-    border-radius: 10px;
-    background-color: white;
-    /* background-color: green; */
-}
-
 .brHeight {
     height: 10px;
     /* padding: 10px; */
@@ -135,21 +91,75 @@ html, body, .mainCenterAttr
     width: 100%;
     /* overflow-y: scroll; */
 }
-.signInFormCSS
-{
-    width: 100%;
-    height: 100%;
-    /* visibility: hidden; */
-}
-
-.signUpFormCSS
-{
-    width: 100%;
-    height: 100%;
-}
 
 @media only screen and (min-width: 481px) {
     /* For Desktops and Tablets: */
+    .bodyMainLeft
+    {
+        height: 100%;
+        /* width: 73% !important; */
+        flex: 1;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+    }
+    .bodyMainRight
+    {
+        height: 100%;
+        width: 35%;
+        min-width: 320px;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        /* margin-top: 10vh; */
+        /* padding-top: 0%; */
+        /*padding-right: 12px;*//*2.5%;*/
+        /*padding-left: 12px;*/ /*2.5%;*/
+        /* display: flex;
+        justify-content: space-between; */
+    }
+    .headerLeft
+    {
+        Height:7%;
+        Width:100%;
+        float:left;
+        Background-Color:Green; 
+    }
+    .headerRight
+    {
+        Height:7%;
+        Width:100%;
+        float:left;
+        Background-Color:Green; 
+    }
+    .bodyLeft
+    {
+        Height:85%;
+        Width:100%;
+        float:left;
+        padding-top: 5%;
+        Background-Color:transparent; 
+    }
+    .bodyRight
+    {
+        Height:85%;
+        Width:100%;
+        float:left;
+        padding-top: 5%;
+        Background-Color:transparent; 
+    }
+    .mainBody
+    {
+        Height:93%; 
+        Width:100%; 
+        float:left; 
+        Background-Color:transparent; 
+    }
+    
+    .bodyMainRight
+    {
+        
+    }
     .imageBackground
     {
         width: 100%;
@@ -159,34 +169,7 @@ html, body, .mainCenterAttr
         background-size: 100% 100%;
         background-attachment: fixed;
     }
-    .mainBody
-    {
-        height: 100%;
-        width: 100%;
-        display: flex;
-    }
-    .bodyLeft
-    {
-        height: 100%;
-        /* width: 73% !important; */
-        flex: 1;
-        float: left;
-        margin: 0px;
-        padding: 0px;
-    }
-    .bodyRight
-    {
-        height: 90%;
-        width: 35%;
-        min-width: 320px;
-        float: left;
-        margin-top: 10vh;
-        padding-top: 0%;
-        padding-right: 12px;/*2.5%;*/
-        padding-left: 12px; /*2.5%;*/
-        /* display: flex;
-        justify-content: space-between; */
-    }
+    
     .imageLogo
     {
         width: 100%;
@@ -208,39 +191,64 @@ html, body, .mainCenterAttr
         margin: 0px;
         padding: 0px;
     }
-    /* .formData
-    {
-        height: 100%;
-        width: 100%;
-        overflow-y: scroll;
-    } */
-    /*
-    .imageLogo
-    {
-        width: 100%;
-        height: 100%;
-        vertical-align: middle;
-        /* float: left;
-        margin: 0px;
-        padding: 0px;*\/
-    }
-    .dataBody
-    {
-        /* width: 25%; *\/
-        height: 90%;
-        min-width: 320px;
-        float: left;
-        margin-top: 10vh;
-        padding-top: 0%;
-        padding-right: 12px;/*2.5%;*\/
-        padding-left: 12px; /*2.5%;*\/
-        /* display: flex;
-        justify-content: space-between; *\/
-    }
-    */
 }
 @media only screen and (max-width: 480px) {
     /* For mobiles: */
+    .bodyMainLeft
+    {
+        height: 50%;
+        width: 100%;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+    }
+    .bodyMainRight
+    {
+        width: 95%;
+        height: 50%;
+        float: left;
+        margin-top: 0%;
+        /* padding-top: 5vh; */
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+    }
+    .headerLeft
+    {
+        Height:0%;
+        Width:100%;
+        float:left;
+        Background-Color:Green; 
+        visibility: hidden;
+    }
+    .headerRight
+    {
+        Height:7%;
+        Width:100%;
+        float:left;
+        Background-Color:Green; 
+        /* visibility: hidden; */
+    }
+    .bodyLeft
+    {
+        Height:40%;
+        Width:100%;
+        float:left;
+        Background-Color:Green; 
+    }
+    .bodyRight
+    {
+        Height:48%;
+        Width:100%;
+        float:left;
+        Background-Color:Green; 
+    }
+    .mainBody
+    {
+        Height:93%; 
+        Width:100%; 
+        float:left; 
+        Background-Color:transparent; 
+    }
     .imageBackground
     {
         width: 100%;
@@ -257,24 +265,7 @@ html, body, .mainCenterAttr
         Width: 100%;
     }
     
-    .bodyLeft
-    {
-        height: 50%;
-        width: 100%;
-        float: left;
-        margin: 0px;
-        padding: 0px;
-    }
-    .bodyRight
-    {
-        width: 95%;
-        height: 50%;
-        float: left;
-        margin-top: 0%;
-        padding-top: 5vh;
-        padding-right: 2.5%;
-        padding-left: 2.5%;
-    }
+    
     .imageLogo
     {
         /* width: 100%;
@@ -296,33 +287,4 @@ html, body, .mainCenterAttr
         /* /* margin: 0px; */
         padding-top: 5vh;
     }
-    /* .formData
-    {
-        height: 100%;
-        width: 100%;
-        overflow-y: scroll;
-    } */
-    /*
-    .imageLogo
-    {
-        /* width: 100%;
-        height: 100%; *\/
-        width: 40vh;/*vw=ViewportWidth, vh=ViewportHeight*\/
-        height: 40vh;/*vw=ViewportWidth, vh=ViewportHeight*\/
-        vertical-align: middle;
-        /* float: left; *\/
-    }
-    .dataBody
-    {
-        width: 95%;
-        height: 50%;
-        float: left;
-        margin-top: 0%;
-        padding-top: 5vh;
-        padding-right: 2.5%;
-        padding-left: 2.5%;
-        /* display: flex;
-        justify-content: space-between; *\/
-    }
-    */
 }

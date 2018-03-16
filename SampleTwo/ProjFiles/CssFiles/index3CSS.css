@@ -157,7 +157,6 @@ html, body, .mainCenterAttr
         background-image: url(../Images/SigninOne.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        background-attachment: fixed;
     }
     .mainBody
     {
@@ -248,7 +247,6 @@ html, body, .mainCenterAttr
         background-image: url(../Images/SigninOne.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        background-attachment: fixed;
     }
 
     .body
