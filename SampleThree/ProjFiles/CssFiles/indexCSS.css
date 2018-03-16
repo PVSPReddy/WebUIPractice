@@ -22,19 +22,6 @@ html, body, .mainCenterAttr
     /* overflow: hidden; */
 }
 
-.mainBody
-{
-    display: flex;
-}
-
-.logButtons
-{
-    height: 100%;
-    background-color: indianred;
-    border: none;
-    outline: none;
-}
-
 .entries
 {
     width: 99%;
@@ -92,8 +79,26 @@ html, body, .mainCenterAttr
     /* overflow-y: scroll; */
 }
 
+.logButtons:hover
+{
+    Background-Color:yellow ; 
+}
+/*
+.logButtons:active
+{
+    Background-Color:yellow ; 
+}
+.logButtons:focus
+{
+    Background-Color:yellow ; 
+} */
+
 @media only screen and (min-width: 481px) {
     /* For Desktops and Tablets: */
+    .mainBody
+    {
+        display: flex;
+    }
     .bodyMainLeft
     {
         height: 100%;
@@ -132,6 +137,13 @@ html, body, .mainCenterAttr
         float:left;
         Background-Color:Green; 
     }
+    .logButtons
+    {
+        height: 100%;
+        background-color: indianred;
+        border: none;
+        outline: none;
+    }
     .bodyLeft
     {
         Height:85%;
@@ -148,18 +160,7 @@ html, body, .mainCenterAttr
         padding-top: 5%;
         Background-Color:transparent; 
     }
-    .mainBody
-    {
-        Height:93%; 
-        Width:100%; 
-        float:left; 
-        Background-Color:transparent; 
-    }
-    
-    .bodyMainRight
-    {
-        
-    }
+
     .imageBackground
     {
         width: 100%;
@@ -196,7 +197,7 @@ html, body, .mainCenterAttr
     /* For mobiles: */
     .bodyMainLeft
     {
-        height: 50%;
+        height: 25%;
         width: 100%;
         float: left;
         margin: 0px;
@@ -204,13 +205,13 @@ html, body, .mainCenterAttr
     }
     .bodyMainRight
     {
-        width: 95%;
         height: 50%;
+        width: 100%;
         float: left;
         margin-top: 0%;
         /* padding-top: 5vh; */
-        padding-right: 2.5%;
-        padding-left: 2.5%;
+        /* padding-right: 2.5%; */
+        /* padding-left: 2.5%; */
     }
     .headerLeft
     {
@@ -222,15 +223,28 @@ html, body, .mainCenterAttr
     }
     .headerRight
     {
-        Height:7%;
+        Height:13%;
         Width:100%;
         float:left;
         Background-Color:Green; 
         /* visibility: hidden; */
     }
+    .logButtons
+    {
+        height: 100%;
+        width: 50%;
+        float: left;
+        background-color: indianred;
+        border: none;
+        outline: none;
+    }
+    .logButtonsHolder
+    {
+        width: 100%;
+    }
     .bodyLeft
     {
-        Height:40%;
+        Height:100%;
         Width:100%;
         float:left;
         Background-Color:Green; 
@@ -242,13 +256,6 @@ html, body, .mainCenterAttr
         float:left;
         Background-Color:Green; 
     }
-    .mainBody
-    {
-        Height:93%; 
-        Width:100%; 
-        float:left; 
-        Background-Color:transparent; 
-    }
     .imageBackground
     {
         width: 100%;
@@ -258,14 +265,7 @@ html, body, .mainCenterAttr
         background-size: 100% 100%;
         background-attachment: fixed;
     }
-
-    .body
-    {
-        height: 100%;
-        Width: 100%;
-    }
-    
-    
+        
     .imageLogo
     {
         /* width: 100%;

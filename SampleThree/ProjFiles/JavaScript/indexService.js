@@ -36,11 +36,15 @@ function PageStartUp(urlData)
 
 function OnSignInClicked()
 {
+    document.getElementById("signInButton").style.backgroundColor = "yellow";
+    document.getElementById("signUpButton").style.backgroundColor = "indianred";
     PageStartUp('./ProjFiles/HtmlFiles/SignIn.html');
 }
 
 function OnSignUpClicked()
-{  
+{
+    document.getElementById("signUpButton").style.backgroundColor = "yellow";
+    document.getElementById("signInButton").style.backgroundColor = "indianred";
     PageStartUp('./ProjFiles/HtmlFiles/SignUp.html');  
 }
 
